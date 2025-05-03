@@ -1,25 +1,5 @@
----
-title: "glmulti_qDT"
-author: "Nastienka Yael Perez Jimenez"
-date: "2024-07-24"
-output: html_document
----
-
-
-```{r warning=TRUE}
-library(tidyverse)
-library(ggplot2)
-library(AICcmodavg)
-library(lme4)
-library(lattice)
-library(car)
-library(rJava)
-library(glmulti)
-```
 
 # Div_0
-
-```{r}
 land_Div_0 <- read.csv("Div_0.csv", header = TRUE)
 
 land_Div_0$Taxon <- as.factor(land_Div_0$Taxon)
@@ -33,11 +13,9 @@ View(land_Div_0)
 land_Div_0_mur <- subset(land_Div_0, Taxon == "Mur")
 land_Div_0_mur <- land_Div_0_mur[, -c(5, 7, 9, 11, 13)]
 View(land_Div_0_mur)
-```
+
 
 # Div_1
-
-```{r}
 land_Div_1 <- read.csv("Div_1.csv", header = TRUE)
 
 land_Div_1$Taxon <- as.factor(land_Div_1$Taxon)
@@ -51,11 +29,9 @@ View(land_Div_1)
 land_Div_1_mur <- subset(land_Div_1, Taxon == "Mur")
 land_Div_1_mur <- land_Div_1_mur[, -c(5, 7, 9, 11, 13)]
 View(land_Div_1_mur)
-```
+
 
 # Div_2
-
-```{r}
 land_Div_2 <- read.csv("Div_2.csv", header = TRUE)
 
 land_Div_2$Taxon <- as.factor(land_Div_2$Taxon)
@@ -69,4 +45,3 @@ View(land_Div_2)
 land_Div_2_mur <- subset(land_Div_2, Taxon == "Mur")
 land_Div_2_mur <- land_Div_2_mur[, -c(5, 7, 9, 11, 13)]
 View(land_Div_2_mur)
-```
