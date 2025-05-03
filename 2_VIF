@@ -1,0 +1,27 @@
+
+# VIF
+
+## Div_0
+
+```{r}
+mur_Div_0 = glm(Div_0_log ~ Var1 + Var2 + Var3 + Var4, data = land_Div_0_mur)
+summary(mur_Div_0)
+car::vif(mur_Div_0)
+```
+
+
+## Div_1
+
+```{r}
+mur_Div_1 = glm(Div_1_log ~ Var1 + Var2 + Var3 + Var4, data = land_Div_1_mur)
+summary(mur_Div_1)
+car::vif(mur_Div_1)
+```
+
+## Div_2
+
+```{r}
+mur_Div_2 = glm(Div_2_log ~ Var1 + Var2 + Var3 + Var4, data = land_Div_2_mur)
+summary(mur_Div_2)
+car::vif(mur_Div_2)
+```
