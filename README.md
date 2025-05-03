@@ -2,7 +2,7 @@
 Multi-model averaging approach from with the glmulti package to assess the relative importance of landscape predictors on taxonomic and functional diversity.
 
 
-Libraries:
+## Libraries:
 
 library(tidyverse)
 
